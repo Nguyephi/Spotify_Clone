@@ -27,6 +27,10 @@ footer {
   background-color: black; 
 }
 
+a:link a:visited {
+  text-decoration: none;
+}
+
 .nav-parent-container {
   display: flex;
   width: 1170px;   /* add 970px for smaller screen */
@@ -157,16 +161,35 @@ header .container {
 }
 
 .footer-parent {
-  display: inline;
+  display: flex;
+}
+
+footer {
+  padding: 80px 0px 50px 0px;
 }
 
 footer li {
-  color: white;
+  
   list-style: none;
   font-size: 16px;
   font-weight: 400;
   font-family: Circular, Helvetica, Arial, sans-serif;
   margin-bottom: 12px;
+  padding: 3px 0px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #1ED760;
+  text-decoration: none;
+}
+
+.footer-parent a {
+  margin-bottom: 50px;
 }
 
 footer ul {
@@ -174,11 +197,11 @@ footer ul {
   width: 195px;
   height: 42px;
   padding: 0px 15px;
+  letter-spacing: .08em
 }
 
 footer .spotify-logo{
   width: 165px;
-  padding: 0;
 }
 
 footer a {
@@ -194,9 +217,7 @@ footer a {
   font-family: inherit;
 }
 
-.footer-container {
-  padding-top: 80px;
-  padding-bottom: 50px;
+#footer-logo {
   margin: 0px;
 }
 
@@ -210,4 +231,19 @@ footer a {
   background-color: #222326;
   color: white;
   border-radius: 50%;
+}
+
+.social-icon a {
+  cursor: pointer;
+  height: 44px;
+  width: 44px;
+  padding: 8px;
+  background-size: auto;
+  position: relative;
+  margin-bottom: 12px;
+  justify-content: space-between;
+}
+
+.social-icon li{
+  display: inline-block;
 }
